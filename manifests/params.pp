@@ -5,4 +5,6 @@
 # @example
 #   include ldapclient::params
 class ldapclient::params {
+  $ldapclient_service_enable = true
+  $ldapclient_service_ensure = 'running'
 }
