@@ -1,13 +1,13 @@
 require 'spec_helper'
 
-describe 'ldapclient' do
+describe 'ldapclient::install' do
   on_supported_os.each do |os, os_facts|
     context "on #{os}" do
       let(:facts) { os_facts }
 
       it { is_expected.to compile }
 
-      it { is_expected.to contain_class('ldapclient') }
+      it { is_expected.to contain_class('ldapclient::install') }
     end
   end
 end
