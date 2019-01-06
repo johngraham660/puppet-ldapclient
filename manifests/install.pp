@@ -4,5 +4,6 @@
 #
 # @example
 #   include ldapclient::install
+
 class ldapclient::install inherits ldapclient {
 }
