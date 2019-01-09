@@ -6,8 +6,12 @@
 #   include ldapclient
 class ldapclient (
 
-  $ldapclient_service_enable = undef,
-  $ldapclient_service_ensure = undef,
+  $ldapclient_service_enable   = undef,
+  $ldapclient_service_ensure   = undef,
+  $ldapclient_config_servers   = undef,
+  $ldapclient_config_basedn    = undef,
+  $ldapclient_config_uri       = undef,
+  $ldapclient_config_proxypass = undef,
 
 ) inherits ldapclient::params {
 
